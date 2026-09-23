@@ -1,0 +1,2 @@
+sed -i 's/const textRemainder = remainingLines.join('\'' '\'');/const textRemainderWithU = remainingLines.join('\'' '\'');\n    const textRemainder = stripU(textRemainderWithU);/g' src/lib/wordParser.ts
+sed -i 's/const textRemainder = mainTextLines.slice(1).join('\'' '\'');/const textRemainderWithU = mainTextLines.slice(1).join('\'' '\'');\n    const textRemainder = stripU(textRemainderWithU);/g' src/lib/wordParser.ts

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix AI LÀ TRIỆU PHÚ  TOÁN HỌC - THỦY",
+  "description": "Giao diện trắc nghiệm toán học Ôn thi Tốt nghiệp THPT Môn Toán 2027 với 22 câu hỏi chuẩn cấu trúc.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

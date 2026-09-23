@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+    touch-action: manipulation;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: #020617;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* KaTeX math formula responsiveness and precision baseline alignment */
+.katex {
+  font-size: 1.05em !important;
+  max-width: 100%;
+  line-height: normal;
+  text-rendering: auto;
+}
+
+.katex-display {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  max-width: 100% !important;
+  padding: 4px 0 !important;
+  margin: 0.5em 0 !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.inline-math {
+  display: inline;
+  vertical-align: baseline;
+  max-width: 100%;
+}
+
+.inline-math .katex {
+  display: inline;
+  vertical-align: baseline;
+}
+
+
+/* Custom sleek scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(250, 204, 21, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(250, 204, 21, 0.8);
+}
+
+/* Utility to hide scrollbars smoothly */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe areas for all mobile phones (iOS notch & Android gesture bars) */
+.pb-safe {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0.75rem));
+}
+
+.pt-safe {
+  padding-top: max(0.5rem, env(safe-area-inset-top, 0.5rem));
+}
+
+.pl-safe {
+  padding-left: max(0.5rem, env(safe-area-inset-left, 0.5rem));
+}
+
+.pr-safe {
+  padding-right: max(0.5rem, env(safe-area-inset-right, 0.5rem));
+}
